@@ -238,22 +238,19 @@ En su mayoría, el diseño adaptable se implementa con etiquetas como div, tambi
 
 El primer comando destacado es fundamental, ya que incide en la estructuración y construcción de bloques: el display.
 
-css
-Copy code
+
 h1 {
     display: flex;
 }
 Otro comando relevante es float, el cual sitúa elementos en el lado izquierdo o derecho de su contenedor, permitiendo que el texto y los elementos en línea se ajusten a su alrededor.
 
-css
-Copy code
+
 #left {
     float: left;
 }
 Asimismo, box-sizing se utiliza para recalcular las dimensiones del borde y el padding en relación con el tamaño de la información.
 
-css
-Copy code
+
 * {
     box-sizing: border-box;     
     font-weight: 600;
@@ -263,15 +260,13 @@ Propiedades de Alineación:
 
 Existen varios comandos para alinear elementos en una página web, destacando align-items, que controla la alineación de todos los elementos.
 
-css
-Copy code
+
 h2 {
     align-items: left;
 }
 Pasamos a la sección de flex-direction, indicando que el eje principal se orienta a lo largo de una fila horizontal, y la alineación del eje transversal desplaza los elementos hacia arriba o hacia abajo.
 
-css
-Copy code
+
 .ejemplo {
   display: flex;
   flex-direction: column;
@@ -280,8 +275,7 @@ Copy code
 }
 Otro comando relevante es justify-content, utilizado para justificar el contenido en una página web. Similar a lo anterior, pero con justify-content, se determina cómo el navegador distribuye el espacio entre y alrededor de los elementos a lo largo del eje principal de un contenedor flexible o el eje en línea de un contenedor de cuadrícula. Además, ofrece opciones como:
 
-css
-Copy code
+
 .box {
     justify-content: start;
 }
@@ -291,8 +285,7 @@ Uso de Imágenes:
 
 Para que una imagen sea adaptable, se le pueden aplicar diversos formatos y estilos. Se asigna un valor a la propiedad de anchura, y la altura se ajusta automáticamente. Es crucial utilizar unidades relativas, como porcentaje, en lugar de absolutas, como píxeles.
 
-css
-Copy code
+
 header {
     height: 100vh;
     background-image: url(../img/brandon-burridge-4o7f9_Z73a4-unsplash.jpg);
@@ -306,8 +299,7 @@ Media Queries:
 
 Las consultas de medios (Media queries) posibilitan la aplicación de estilos CSS según el tipo general de un dispositivo, basándose en factores como el tamaño de pantalla, la resolución o el ancho del viewport del navegador. Se ilustra con el siguiente ejemplo:
 
-css
-Copy code
+
 @media only screen and (max-width: 700px) {
     /* REGLAS */
     .column-3 {
